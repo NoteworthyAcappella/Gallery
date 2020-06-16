@@ -3,7 +3,7 @@ function trialLoadImages(){
   imageList.onReadyStateChange = function(){
     if(this.readyState == 4 && this.status == 200){
       var obj = JSON.parse(this.responseText);
-      for(var i=1; i<obj.ninteentwenty.length, i++){
+      for(var i=1; i<obj.ninteentwenty.length; i++){
         document.getElementById("19-20").innerHTML += "<img src=\"2019-20/" + obj.ninteentwenty[i] + ".jpg\" style=\"margin:30px;\" />"
       }
       for(var i=1; i<obj.eighteennineteen.length, i++){
