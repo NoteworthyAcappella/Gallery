@@ -1,4 +1,4 @@
-function trialLoader(){
+function trialLoadImages(){
   var imageList = new XMLHttpRequest();
   imageList.onReadyStateChange = function(){
     if(this.readyState == 4 && this.status == 200){
