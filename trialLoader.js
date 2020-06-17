@@ -18,3 +18,12 @@ function trialLoadImages(){
     }
   }
 }
+
+function loadImages(){
+  var imageList = new XMLHttpRequest();
+  imageList.onReadyStateChange = function(){
+    if(this.readyState == 4 && this.status == 200){
+      var obj = JSON.parse(this.responseText);
+    }
+  }
+}
