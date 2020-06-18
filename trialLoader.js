@@ -3,13 +3,13 @@ function trialLoadImages(){
   imageList.onReadyStateChange = function(){
     if(this.readyState == 4 && this.status == 200){
       var obj = JSON.parse(this.responseText);
-      for(var i=1; i<obj.ninteentwenty.length; i++){
+      for(var i=0; i<obj.ninteentwenty.length; i++){
         document.getElementById("19-20").innerHTML += "<img src=\"2019-20/" + obj.ninteentwenty[i] + ".jpg\" style=\"margin:30px;\" />"
       }
-      for(var i=1; i<obj.eighteennineteen.length; i++){
+      for(var i=0; i<obj.eighteennineteen.length; i++){
         document.getElementById("18-19").innerHTML += "<img src=\"2018-19/" + obj.ninteentwenty[i] + ".jpg\" style=\"margin:30px;\" />"
       }
-      for(var i=1; i<obj.seventeeneighteen.length; i++){
+      for(var i=0; i<obj.seventeeneighteen.length; i++){
         document.getElementById("17-18").innerHTML += "<img src=\"20c17-18/" + obj.ninteentwenty[i] + ".jpg\" style=\"margin:30px;\" />"
       }
     }
