@@ -1,7 +1,7 @@
 function trialLoadImages(){
   var imageList = new XMLHttpRequest();
   imageList.onreadystatechange = function(){
-    if(this.readyState == 4 && this.status == 200) {\
+    if(this.readyState == 4 && this.status == 200) {
       var obj = JSON.parse(this.responseText);
       for(var i=0; i < obj.nineteentwenty.length; i++) {
         document.getElementById("19-20").innerHTML += "<img src=\"2019-20/" + obj.nineteentwenty[i] + ".jpg\" style=\"margin:30px;\" />";
