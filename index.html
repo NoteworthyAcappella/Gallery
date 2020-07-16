@@ -1,20 +1,35 @@
 <!DOCTYPE html>
-<html style="background-color:black;">
-<head>
+<html style="background-color:black;"><head>
   <title>Gallery coming soon! | Noteworthy A Cappella LHS</title>
-  <script type="text/javascript" src="trialLoader.js"></script>
+  <script type="text/javascript" src="./trialLoader.js"></script>
   <style>
     h1{color:white;}
+    .Image:hover{
+      cursor: pointer;
+    }
+    .Current{
+      position: fixed;
+      height: 100%;
+      width: 100%;
+      background-color: black;
+      opacity: 0.3;
+    }
+    .BigView{
+      display:block;
+      margin-left:auto;
+      margin-right:auto;
+    }
   </style>
 </head>
-<body id="all" onload="trialLoadImages()">
+<body id="all" onload="loadImages()">
   <div id="19-20">
-    <h1>2019-2020 season</h1>
+    <h1>2019-2020 Season</h1>
   </div>
   <div id="18-19">
-    <h1>2018-2019 season</h1>
+    <h1>2018-2019 Season</h1>
   </div>
   <div id="17-18">
-    <h1>2017-2018 season</h1>
+    <h1>2017-2018 Season</h1>
   </div>
-</body>
+
+</body></html>
