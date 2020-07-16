@@ -4,7 +4,7 @@ function purgeAndLoadImages(){
   document.getElementById("17-18").innerHTML = "<h1>2017-2018 Season</h1>";
   var a = window.innerWidth;
   var b = window.innerHeight;
-  if !(a == window.innerWidth && b == window.innerHeight){
+  if (!(a == window.innerWidth && b == window.innerHeight)){
     return 0;
   }
   loadImages();
