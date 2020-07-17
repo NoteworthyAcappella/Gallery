@@ -29,7 +29,7 @@ function loadImages(){
       }
       imgNum = 0;
       for(var i=0; i < obj.seventeeneighteen.length; i++) {
-        document.getElementById("17-18").innerHTML += "<img src=\"2017-18/" + obj.seventeeneighteen[i] + ".jpg\" style=\"margin:30px;\" id=\"18_" + imgNum.toString() +"\" class=\"Image\" onclick=\"biggify(18, " + imgNum.toString() + ")\" />";
+        document.getElementById("17-18").innerHTML = "<img src=\"2017-18/" + obj.seventeeneighteen[i] + ".jpg\" style=\"margin:30px;\" id=\"18_" + imgNum.toString() +"\" class=\"Image\" onclick=\"biggify(18, " + imgNum.toString() + ")\" />";
         getImageSize("2017-18/" + obj.seventeeneighteen[i] + ".jpg", imgNum, "18_");
         imgNum++;
       }
