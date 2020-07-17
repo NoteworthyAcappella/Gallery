@@ -58,7 +58,7 @@ function getImageSize(src, arg, yr){
 
 function biggify(group, id){
   var a = document.getElementById(group + "_" + id).src;
-  document.getElementById("all").innerHTML += "<div id=\"Current\" class=\"Current\" onclick=\"destroyCurrent()\"> <img src=\""+a+"\" id=\"BigView\" class=\"BigView\" style=\"text-align:center;\"/ ></div + document.getElementById("all").innerHTML;
+  document.getElementById("all").innerHTML += "<div id=\"Current\" class=\"Current\" onclick=\"destroyCurrent()\"> <img src=\""+a+"\" id=\"BigView\" class=\"BigView\" style=\"text-align:center;\"/ ></div>" + document.getElementById("all").innerHTML;
   document.getElementById("BigView").style.width = (0.7 * window.innerWidth).toString() + "px";
 }
 
