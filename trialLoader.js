@@ -60,7 +60,7 @@ function getImageSize(src, arg, yr){
 
 function biggify(group, id){
   var a = document.getElementById(group + "_" + id).src;
-  document.getElementById("all").innerHTML = "<div id=\"Current\" class=\"Current\" onclick=\"destroyCurrent()\"> <img src=\""+a+"\" id=\"BigView\" class=\"BigView\" style=\"text-align:center;\"/ ></div>" + document.getElementById("all").innerHTML;
+  document.getElementById("all").innerHTML = "<div id=\"Current\" class=\"Current\"><button class=\"x\" onclick=\"destroyCurrent()\">x</button><img src=\""+a+"\" id=\"BigView\" class=\"BigView\" style=\"text-align:center;\"/ ></div>" + document.getElementById("all").innerHTML;
   if ((document.getElementById(group + "_" +id).offsetHeight/document.getElementById(group + "_" +id).offsetWidth) > (window.innerHeight/window.innerWidth)){
     document.getElementById("BigView").style.height = (0.7 * window.innerHeight).toString() + "px";
   }
