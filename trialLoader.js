@@ -4,7 +4,9 @@ function purgeAndLoadImages(){
   document.getElementById("17-18").innerHTML = "<h1>2017-2018 Season</h1>";
   var a = window.innerWidth;
   var b = window.innerHeight;
-  if (!(a == window.innerWidth && b == window.innerHeight)){
+  if (a == window.innerWidth && b == window.innerHeight){
+  }
+  else{
     return 0;
   }
   loadImages();
@@ -59,7 +61,12 @@ function getImageSize(src, arg, yr){
 function biggify(group, id){
   var a = document.getElementById(group + "_" + id).src;
   document.getElementById("all").innerHTML = "<div id=\"Current\" class=\"Current\" onclick=\"destroyCurrent()\"> <img src=\""+a+"\" id=\"BigView\" class=\"BigView\" style=\"text-align:center;\"/ ></div>" + document.getElementById("all").innerHTML;
-  document.getElementById("BigView").style.width = (0.7 * window.innerWidth).toString() + "px";
+  if ((document.getElementById(group + "_" +id).offsetHeight/document.getElementById(group + "_" +id).offsetWidth) > (window.innerHeight/window.innerWidth)){
+    document.getElementById("BigView").style.height = (0.7 * window.innerHeight).toString() + "px";
+  }
+  else{
+    document.getElementById("BigView").style.width = (0.7 * window.innerWidth).toString() + "px";
+  }
 }
 
 function destroyCurrent(){
